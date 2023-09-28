@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BearBer</title>
+    <style>
+        .BearBear {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            padding: 50px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .BearBear::before {
+            content: "";
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: -5%;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .BearBear::after {
+            content: "";
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            right: -5%;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .Eye {
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .Eye::before {
+            content: "";
+            width: 35px;
+            height: 35px;
+            border: 10px solid white;
+            border-radius: 50%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 17%;
+            left: 25%;
+            margin: auto;
+        }
+
+        .Eye::after {
+            content: "";
+            width: 35px;
+            height: 35px;
+            border: 10px solid white;
+            border-radius: 50%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 17%;
+            right: 25%;
+            margin: auto;
+        }
+
+        .near {
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .near::before {
+            content: "";
+            width: 35px;
+            height: 35px;
+            border: 10px solid rgb(0, 0, 0);
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: -2%;
+            left: 10%;
+            margin: auto;
+        }
+
+        .near::after {
+            content: "";
+            width: 35px;
+            height: 35px;
+            border: 10px solid rgb(0, 0, 0);
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: -2%;
+            right: 10%;
+            margin: auto;
+        }
+
+        .mouth {
+            width: 130px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .mouth::before {
+            content: "";
+            width: 80px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #000000;
+            left: 0;
+            bottom: 20%;
+            right: 0;
+            margin: auto;
+        }
+
+        .mouth::after {
+            content: "";
+            width: 30px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #000000;
+            left: 0;
+            top: 8%;
+            right: 0;
+            margin: auto;
+        }
+
+        .line {
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .line::before {
+            content: "";
+            width: 35px;
+            height: 40px;
+            position: absolute;
+            background-color: #ffffff;
+            left: 37%;
+            bottom: 10%;
+            margin: auto;
+
+
+            transform: skew(45deg);
+        }
+
+
+        .line::after {
+            content: "";
+            width: 35px;
+            height: 40px;
+            position: absolute;
+            background-color: #ffffff;
+            right: 37%;
+            bottom: 10%;
+            margin: auto;
+
+            transform: skew(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="BearBear">
+        <div class="Eye"></div>
+        <div class="near"></div>
+        <div class="mouth"></div>
+        <div class="line"></div>
+    </div>
+</body>
+
+</html>
